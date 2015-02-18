@@ -7,6 +7,14 @@ tableroajedrez(n)
 Tablero eficiente en tiempo con posibilidad de dimension no cuadrada
 ```
 tableroAjedrez2(n,m) 
+
+>> tableroajedrez2(5,8)
+ans =
+     1     0     1     0     1     0     1     0
+     0     1     0     1     0     1     0     1
+     1     0     1     0     1     0     1     0
+     0     1     0     1     0     1     0     1
+     1     0     1     0     1     0     1     0
 ```
 ```
 tic
