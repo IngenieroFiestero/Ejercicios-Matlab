@@ -1,5 +1,5 @@
 function salida = cesar(entrada,desplazamiento)
-a=double(entrada)
+a=double(entrada);
 for i=1:length(a)
     aux=a(i);
     val=65;
