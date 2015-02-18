@@ -47,5 +47,15 @@ para n = 9 -> error = 2.5068e-010
 Ambas funciones hacen uso de la funcion arcotangente(n,x) para el calculo de las mismas.
 
 ##Cifrado Cesar
+Funcion de cifrado simple basado en la técnica Cesar. Admite tanto minusculas como mayusculas basados en caracteres ASCII.
+```
+cesar(entrada,desplazamiento)
 
+cesar('AaBbCcXxYyZz',2) = CcDdEeZzAaBb
 
+```
+##Semillas Girasol
+Esta funcion representa graficamente la disposicion de las semillas de girasol en funcion del numero de semillas que deseemos representar.
+```
+girasol(n)
+```
