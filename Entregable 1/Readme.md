@@ -1,9 +1,24 @@
 #Ejercicios hechos
 ##El tablero de ajedrez
+Tablero simple
+```
+tableroajedrez(n)
+```
+Tablero eficiente en tiempo con posibilidad de dimension no cuadrada
+```
+tableroAjedrez2(n,m) 
+```
 ```
 tic
 tableroAjedrez(5)
 toc
+ans =
+     1     0     1     0     1
+     0     1     0     1     0
+     1     0     1     0     1
+     0     1     0     1     0
+     1     0     1     0     1
+Elapsed time is 0.000062 seconds.
 tic
 tableroAjedrez2(5)
 toc
@@ -13,15 +28,24 @@ ans =
      1     0     1     0     1
      0     1     0     1     0
      1     0     1     0     1
-Elapsed time is 0.000532 seconds.
-ans =
-     1     0     1     0     1
-     0     1     0     1     0
-     1     0     1     0     1
-     0     1     0     1     0
-     1     0     1     0     1
-Elapsed time is 0.000659 seconds.
+Elapsed time is 0.000112 seconds.
 ```
-Es mas efectivo el segundo tablero de ajedrez puesto que solo se utiliza un for
+Es mas efectivo el primer tablero de ajedrez cuando los valores de n son pequeños, para valores de n grandes utilizar tableroajedrez2() pues utiliza un unico for.
 
-##
+##Numero Pi
+Calcula el numero pi usando la serie de la arcotangente.
+```
+pi1(n)
+para n = 20000 -> error = 1.0000e-004
+```
+Calculo de pi usando series rapidas
+```
+pi2(n)
+para n = 3 -> error = 1.4487e-004
+para n = 9 -> error = 2.5068e-010
+```
+Ambas funciones hacen uso de la funcion arcotangente(n,x) para el calculo de las mismas.
+
+##Cifrado Cesar
+
+
