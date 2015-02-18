@@ -22,3 +22,6 @@ ans =
      1     0     1     0     1
 Elapsed time is 0.000659 seconds.
 ```
+Es mas efectivo el segundo tablero de ajedrez puesto que solo se utiliza un for
+
+##
