@@ -1,0 +1,11 @@
+function nError = serieN(error)
+nError=1;
+atan1 = 4*(6*arcotangente(nError,1/8) + 2*arcotangente(nError,1/57) + arcotangente(nError,1/239));
+er = 10;
+while error <= er
+    nError = nError + 1;
+    atan0 = 4*(6*arcotangente(nError,1/8) + 2*arcotangente(nError,1/57) + arcotangente(nError,1/239));   
+    er = abs(atan0 - atan1)
+    atan1 = atan0;
+end
+end
