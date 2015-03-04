@@ -49,10 +49,26 @@ para n = 20000 -> error = 1.0000e-004
 Calculo de pi usando series rapidas
 ```
 pi2(n)
-para n = 3 -> error = 1.4487e-004
-para n = 9 -> error = 2.5068e-010
+para n = 5 -> error = 1.615253309772413e-006
+para n = 11 -> error = 3.313349594691317e-012
 ```
 Ambas funciones hacen uso de la funcion arcotangente(n,x) para el calculo de las mismas.
+
+Para buscar un error concreto usar la funcion serieN(error)
+```
+
+>> serieN(1.0000e-004);
+n =
+     5
+er =
+    1.615253309772413e-006
+ 
+>> serieN(1.0000e-015);
+n =
+    15
+er =
+    8.881784197001252e-016
+```
 
 ##Cifrado Cesar
 Funcion de cifrado simple basado en la técnica Cesar. Admite tanto minusculas como mayusculas basados en caracteres ASCII.
