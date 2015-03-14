@@ -1,0 +1,9 @@
+function entropia = entropiaProb(prob)
+if(all(prob))
+    entropia = sum(-prob.*log2(prob));
+else
+    aux = prob > 0;
+    aux2 = prob == 0;
+    entropia = sum(-prob.*aux.*log2(prob + aux2)); 
+end
+end
