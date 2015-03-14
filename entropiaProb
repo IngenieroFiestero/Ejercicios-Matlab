@@ -1,9 +1,13 @@
 function entropia = entropiaProb(prob)
-if(all(prob))
-    entropia = sum(-prob.*log2(prob));
+if(sum(prob) > 1)
+    fprintf('La probabilidad debe sumar 0');
 else
-    aux = prob > 0;
-    aux2 = prob == 0;
-    entropia = sum(-prob.*aux.*log2(prob + aux2)); 
+    if(all(prob))
+        entropia = sum(-prob.*log2(prob));
+    else
+        aux = prob > 0;
+        aux2 = prob == 0;
+        entropia = sum(-prob.*aux.*log2(prob + aux2)); 
+    end
 end
 end
